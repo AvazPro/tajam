@@ -1,0 +1,17 @@
+.our {
+    margin: 50px 0;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__info {
+        width: 75%;
+    }
+    &__title {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+}

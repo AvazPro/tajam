@@ -1,0 +1,63 @@
+.email {
+    margin: 50px;
+    
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__form {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__message {
+        padding: 8px;
+        height: 150px;
+        resize: none;
+        border: 1px solid silver;
+    }
+    
+    &__title,
+    &__title2 {
+        @include title(22px, black, 0);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__btn {
+        cursor: pointer;
+        margin-top: 15px;
+        width: 80px;
+        @include button(#199FA5, 12px, #199FA5)
+    }
+    &__right {
+        width: 45%;
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__images {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__images2 {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+    }
+    &__img {
+        margin: 15px 0;
+        width: 80%;
+    }
+
+}
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid silver;
+}

@@ -1,0 +1,33 @@
+.photoshop {
+    background-image: url("../img/people-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0 120px 0;
+    
+    &__text {
+        color: white;
+        margin-bottom: 50px;
+    }
+    &__author {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 10px;
+    }
+    &__job {
+        color: #958AB4;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+    &__icon {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    &__iconcolor {
+        color: white;
+    }
+}

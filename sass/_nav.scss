@@ -1,0 +1,85 @@
+.nav {
+    background-image: url("../img/trees-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        width: 150px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        padding: 0;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    &__item:first-of-type {
+        margin-left: 0;
+    }
+    &__link {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 3px;
+        
+        // font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #199FA5;
+            border-radius: 50px;
+            left: 0;
+            top: 50%;
+            transform: scale(0);
+            transition: 0.2s transform linear, 0.2s top linear;
+        }
+        &:hover::before {
+            transform: scale(1.13);
+            top: 100%;
+        }
+       
+    }
+
+    // nav info
+    &__info {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__title {
+        @include title(35px, white, 100px);
+        text-transform: capitalize;
+    }
+    &__line {
+       @include line(50px, 2px, #199FA5); 
+    }
+    &__text {
+        @include text(16px, white);
+    }
+    &__btn {
+        @include button(#199FA5, 12px, #199FA5);
+        margin-top: 20px;
+    }
+
+}

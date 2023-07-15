@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    padding: 20px 230px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+p {
+    line-height: 1.5;
+}
+span {
+    display: inline-block;
+}

@@ -1,0 +1,111 @@
+.footer {
+    background-image: url("../img/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+    &__title {
+        @include title(18px, white, 10px);
+        text-transform: uppercase;
+    }
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+    }
+    &__box {
+        width: 30%;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    &__item {
+        padding: 0;
+        margin-top: 40px;
+    }
+    &__link {
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-right: 10px;
+
+        &:nth-of-type(3) {
+            margin-right: 0;
+        }
+    }
+    &__icontext {
+        display: flex;
+        align-items: baseline;
+
+        & p {
+            margin-left: 10px;
+        }
+    }
+    &__icontext2 {
+        display: flex;
+        align-items: baseline;
+
+        & p {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    &__icontext3 {
+
+        & i {
+            font-size: 24px;
+        }
+        & form {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+    }
+    &__message {
+        padding: 12px 15px 12px 10px;
+        margin-bottom: 0;
+    }
+    &__btn {
+        background-color: #A299B4;
+        border: none;
+        padding: 8.5px 18px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    &__btnicon {
+        color: white;
+    }
+    
+    &__icons {
+        display: flex;
+        // flex-wrap: wrap;
+        margin-top: 40px;
+    }
+     &__icon {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #BBB0DA;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+     } 
+     &__link2 {
+        color: white;
+     }
+     &__copyright {
+        margin-top: 45px;
+     }
+     &__bottom {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+     }
+}

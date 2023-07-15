@@ -1,0 +1,55 @@
+.articles {
+    margin-top: 30px;
+    text-align: center;
+
+    &__title {
+        @include title(35px, black, 20px);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 18px;
+        margin: 0;
+    }
+    &__line {
+        @include line(50px, 2px, silver);
+        margin-top: 10px;
+    }
+    &__info {
+        @include text(16px, black);
+    }
+    &__boxes {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin: 60px 0;
+
+    }
+    &__box {
+        width: 33%;
+        // margin-bottom: 50px;
+        border: 1px solid silver;
+        border-top: none;
+        border-left: none;
+
+    }
+    &__job {
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__info {
+        margin: 10px auto;
+        width: 80%;
+    }
+    &__as4,
+    &__as5,
+    &__as6 {
+        border-bottom: none;
+        padding-top: 10px;
+    }
+    &__as3,
+    &__as6 {
+        border-right: none;
+    }
+}

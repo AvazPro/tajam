@@ -1,0 +1,64 @@
+.group {
+    padding: 30px 0;
+    background-image: url("../img/people-bg.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    &__title {
+        @include title(32px, #F1E7FF, 0);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__text {
+        @include text(16px, #F1E7FF);
+        text-align: center;
+        word-spacing: 3px;
+    }
+    &__line {
+        @include line(50px, 2px, #655B80);
+    }
+    &__boxes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__box {
+        width: 23%;
+        border: 1px solid #8D81AF;
+        margin-top: 80px;
+        // background-color: white;
+    }
+    &__bg {
+        background-color: white;
+        height: 300px;
+    }
+    &__info {
+        padding: 15px 0;
+        text-align: center;
+    }
+    &__name {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 10px;
+    }
+    &__job {
+        color: #A09ABC;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    &__bottom {
+        @include text(16px, #F1E7FF);
+        text-align: center;
+        margin: 60px 0 25px 0;
+    }
+    &__btn {
+        text-decoration: none;
+        @include button(#199FA5, 12px, #199FA5)
+    }
+
+}
